@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <title>Devhub Project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-auto form-cont">
           <h1>Website Form</h1>
           <p>
-            Please fill out your information to generate website
+            Please fill out your information to generate website preview
           </p>
-           <!-- action="http://cloudtemplates.cloudfrontend.net/app/live-preview/?clone_id=1576931&site=" method="get" -->
+          <!-- form -->
           <form class="website-form">
             <div class="form-group">
               <label for="business_name">Business Name</label>
@@ -36,7 +38,7 @@
               <label for="postal_code">Postal Code</label>
               <input type="text" name="postal_code" class="form-control" id="postal_code" value="98199">
             </div>
-            <input type="submit" id="submitBtn" name="submit" value="Submit">
+            <input type="submit" id="submitBtn" class="btn btn-primary" name="submit" value="Submit">
           </form>
         </div>
       </div>
@@ -46,15 +48,14 @@
     <div id="modalBox" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>
-          Site Preview:
-        </p>
-         <iframe class="myFrame" id="myFrame" src="site.html"></iframe>
-         <button class="export" onclick="exportJSON()">Export</button>
+        <h3>
+          Website Preview
+        </h3>
+        <!-- iframe -->
+        <iframe class="myFrame" id="myFrame" src="loading.html"></iframe>
+        <button class="export btn btn-primary"  onclick="exportJSON()">Export</button>
       </div>
     </div>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
