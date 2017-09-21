@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Devhub Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto form-cont">
+          <h1>Website Form</h1>
+          <p>
+            Please fill out your information to generate website
+          </p>
+           <!-- action="http://cloudtemplates.cloudfrontend.net/app/live-preview/?clone_id=1576931&site=" method="get" -->
+          <form class="website-form">
+            <div class="form-group">
+              <label for="business_name">Business Name</label>
+              <input type="text" name="business_name" class="form-control" id="business_name" value="Starbucks">
+            </div>
+            <div class="form-group">
+              <label for="street">Street</label>
+              <input type="text" name="street" class="form-control" id="street" value="3421 West Blaine St">
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" name="city" class="form-control" id="city" value="Seattle">
+            </div>
+            <div class="form-group">
+              <label for="state">State (i.e. WA)</label>
+              <input type="text" name="state" class="form-control" id="state" value="WA">
+            </div>
+            <div class="form-group">
+              <label for="postal_code">Postal Code</label>
+              <input type="text" name="postal_code" class="form-control" id="postal_code" value="98199">
+            </div>
+            <input type="submit" id="submitBtn" name="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal  -->
+    <div id="modalBox" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Site Preview:
+        </p>
+         <iframe class="myFrame" id="myFrame" src="site.html"></iframe>
+         <button class="export" onclick="exportJSON()">Export</button>
+      </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
