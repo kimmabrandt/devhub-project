@@ -16,12 +16,15 @@ h3 {
 .container {
   background-color:#276eab;
   width: 100%;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 60px;
   border-radius: 5px;
 }
 
 /*  FORM  */
+form {
+  padding-top: 7px;
+}
 .form-cont {
   background-color: #f3f7fa;
   border-radius: 5px;
@@ -31,7 +34,8 @@ h3 {
 .form-group {
   color: #787878;
   font-size: 14px;
-  margin: 7px 0px;
+  line-height: .6;
+  margin: 7px 0px 14px 0px;
 }
 
 /*  IFRAME  */

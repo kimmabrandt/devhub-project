@@ -29,7 +29,6 @@ var formObject = {
 
 $(document).ready(function() {
 
-
   // when form is submitted
   $("form").submit(function(event) {
 
@@ -46,9 +45,6 @@ $(document).ready(function() {
     formObject.business.locations[0].postal_code = formData.postal_code;
     formObject.business.locations[0].state = formData.state;
     formObject.business.locations[0].street = formData.street;
-
-
-
 
     site = JSON.stringify(formObject);
 
